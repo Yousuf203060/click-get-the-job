@@ -4,8 +4,7 @@ date: 2026-11-16T16:19:00.000Z
 company: Crescent-Steel-&-Allied-Products
 location: Karachi
 category: Private Jobs
-apply_link: Crescent Steel & Allied Products Careers and Employment | Indeed.com
-  https://share.google/hNSGv0M5zicNvHbpX
+apply_link: " https://share.google/hNSGv0M5zicNvHbpX"
 ---
 
 
