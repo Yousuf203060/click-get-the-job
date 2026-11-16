@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: Yousuf203060/click-get-the-job
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+media_folder: uploads
+public_folder: /uploads
+collections:
+  - name: jobs
+    label: Jobs
+    label_singular: Job
+    folder: content/jobs
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: Job Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Company / Department, name: company, widget: string }
+      - { label: Location, name: location, widget: string, default: Karachi }
+      - label: Category
+        name: category
+        widget: select
+        options: ["Private Jobs", "Govt Jobs", "Banking Jobs", "Teaching Jobs", "IT & Remote Jobs", "Healthcare Jobs", "Internships"]
+      - { label: Salary, name: salary, widget: string, required: false }
+      - { label: Last Date, name: deadline, widget: string, required: false }
+      - { label: Apply Link / Email, name: apply_link, widget: string, required: false }
+      - { label: Details, name: body, widget: markdown }
